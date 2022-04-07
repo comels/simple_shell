@@ -6,7 +6,7 @@
                                                                                 
 Users type commands which get executed within the session.                      
                                                                                 
-###### Example:                                                                 
+###### EXAMPLE:                                                                 
 ~~~~                                                                            
 $pwd - to print working directory                                               
 $cd .. - to change direcory to previous directory                               
@@ -15,7 +15,7 @@ $cat - to read a file's content
                                                                                 
 ~~~~  
 
-## Contents
+## CONTENTS
 Below are the files in this repository and a description of the code they contain
 
 #### main.c
@@ -88,7 +88,7 @@ Below are the files in this repository and a description of the code they contai
 > * An array of directories on success
 > * `NULL` on failure
 
-### Custom Commands
+### CUSTOM COMMANDS
 Some custom commands for the shell
 
 ##### `_printenv.c`
@@ -139,11 +139,11 @@ Some custom commands for the shell
 > * < 0 if str1 < str2,
 > * 0 is str1 is equal to str2
  
-### man file
+### MAN FILE
 #### man_1_simple_shell
 This is the man file for the shell
 > Usage: man ./man_1_simple_shell
 
-### header file
+### HEADER FILE
 #### simpleshell.h
 Contains all the function prototypes and header files used in this project.
