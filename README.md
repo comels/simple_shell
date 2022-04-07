@@ -67,7 +67,7 @@ int _strlen(char *s)
         return (i);
 }
 #cisfun$ exit
-➜  simple_shell git:(main)
+simple_shell git:(main)
 ```
                                                                                 
 * This shell is a command-line interpreter that provides a command line user interface for Unix-like operating systems.
@@ -217,5 +217,5 @@ This is the man file for the shell
 Contains all the function prototypes and header files used in this project.
 
 ## Authors
-* **Romi Varnier**
-* **Côme Le Sauter**
+**Hiromi Varnier**
+**Côme Le Sauter**
