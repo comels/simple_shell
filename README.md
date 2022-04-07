@@ -1,4 +1,4 @@
-# :shell:  HOLBERTON PROJECT - SIMPLE SHELL  :shell:
+# :shell:  HOLBERTON PROJECT - SIMPLE SHELL  :house:
 
 Code a simple shell for [Holberton School](https://www.holbertonschool.com/).
 
