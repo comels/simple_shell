@@ -18,21 +18,21 @@ $cat - to read a file's content
 ## CONTENTS
 Below are the files in this repository and a description of the code they contain
 
-#### main.c
+#### `main.c`
 > Contains the main code of the shell where all the rest of the other functions are used to make the shell run.
 >
 > Makes the Shell run continously and also listens for signals when a user presses `ctrl + c` 
 >
 > Returns `0` on success and `1` when something goes wrong as the shell runs
 
-#### signal.c
+#### `signal.c`
 > Contains a function that listens for when a user presses `ctrl + c` and prevents the shell session from closing.  
 > 
 > It prints a new line and clears the standard output instead of interrupting the running shell  
 > 
 > Prototype: `void ctrl_c(int signal);`
 
-#### func_read.c
+#### `func_read.c`
 > Contains the function that gets the user input from standard input  
 > 
 > Prototype: `char *func_read(void);`  
@@ -41,7 +41,7 @@ Below are the files in this repository and a description of the code they contai
 > * The pointer to the string of input the user gave if successfull  
 > * NULL if it fails        
 
-#### func_split.c
+#### `func_split.c`
 > Contains the function that tokenises the user input and stores the resulting tokens in an array  
 > 
 > Prototype: `char **func_split(char *line);`  
@@ -50,7 +50,7 @@ Below are the files in this repository and a description of the code they contai
 > * The array of tokens if succesful
 > * NULL on failure
 
-#### func_exec.c
+#### `func_exec.c`
 > Contains the function and it's where the actual linux commands are executed.
 > 
 > Prototype: `int func_exec(char **args);`
@@ -61,7 +61,7 @@ Below are the files in this repository and a description of the code they contai
 > * `1` on success
 > * `0` on failure
 
-#### get_path.c
+#### `get_path.c`
 > Contains the function that gets the full path of given command from the `PATH` variable
 > 
 > Prototype: `char *get_path(char *getcmd);`
@@ -79,7 +79,7 @@ Below are the files in this repository and a description of the code they contai
 > * The value of the environment variable on success
 > * `NULL` on failure
 
-#### split_env.c
+#### `split_env.c`
 > Contains the function that tokenizes the `PATH` to return a list of folders  
 > 
 > Prototype: `char **split_env(char *path);`
@@ -98,7 +98,7 @@ Some custom commands for the shell
 > 
 > It is called by typing the command `env` in the shell  
 
-### Helper Functions
+### `Helper Functions`
 > These are some of the helper functions used across most of the core functions.  
 > 
 > Most of these are also availabe in the standard library but we were supposed to write the functions ourselves
@@ -134,7 +134,7 @@ Some custom commands for the shell
 > 
 > Prototype: `int _strncmp(char *str1, char *str2, int n);`  
 > 
-> Returns:
+> Returns :
 > * > 0 if str2 is less than str1
 > * < 0 if str1 < str2,
 > * 0 is str1 is equal to str2
