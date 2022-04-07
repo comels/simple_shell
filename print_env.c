@@ -6,8 +6,12 @@
 
 void _printenv(void)
 {
-	int i;
+	int i, size;
 
 	for (i = 0; environ[i]; i++)
-		printf("%s\n", environ[i]);
+	{
+		size = _strlen(environ[i]);
+		write(1, environ[i], size);
+		write(1, "\n", 1);
+	}
 }
