@@ -217,5 +217,5 @@ This is the man file for the shell
 Contains all the function prototypes and header files used in this project.
 
 ## Authors
-> **Hiromi Varnier**
-> **Côme Le Sauter**
+**Hiromi Varnier**<br>
+**Côme Le Sauter**
