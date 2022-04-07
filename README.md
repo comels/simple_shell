@@ -1,4 +1,4 @@
-# :trophy: HOLBERTON PROJECT - SIMPLE SHELL
+# :shell: HOLBERTON PROJECT - SIMPLE SHELL
 
 Code a simple shell for [Holberton School](https://www.holbertonschool.com/).
 
