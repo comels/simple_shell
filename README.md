@@ -15,7 +15,7 @@ $cat - to read a file's content
                                                                                 
 ~~~~  
 
-## CONTENTS
+### CONTENTS
 Below are the files in this repository and a description of the code they contain
 
 #### `main.c`
@@ -135,8 +135,8 @@ Some custom commands for the shell
 > Prototype: `int _strncmp(char *str1, char *str2, int n);`  
 > 
 > Returns :
-> * > 0 if str2 is less than str1
-> * < 0 if str1 < str2,
+> * positif if str2 is less than str1
+> * negatif if str1 < str2,
 > * 0 is str1 is equal to str2
  
 ### MAN FILE
