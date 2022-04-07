@@ -98,7 +98,7 @@ Some custom commands for the shell
 > 
 > It is called by typing the command `env` in the shell  
 
-### `Helper Functions`
+### HELPER FUNCTIONS
 > These are some of the helper functions used across most of the core functions.  
 > 
 > Most of these are also availabe in the standard library but we were supposed to write the functions ourselves
