@@ -1,4 +1,74 @@
-# SIMPLE SHELL                                                                  
+# HOLBERTON PROJECT - SIMPLE SHELL
+
+Code a simple shell for [Holberton School](https://www.holbertonschool.com/).
+
+### PREREQUISITES
+Only use the following functions and system calls:
+```
+access (man 2 access)
+chdir (man 2 chdir)
+close (man 2 close)
+closedir (man 3 closedir)
+execve (man 2 execve)
+exit (man 3 exit)
+fork (man 2 fork)
+free (man 3 free)
+fstat (man 2 fstat)
+getcwd (man 3 getcwd)
+getline (man 3 getline)
+kill (man 2 kill)
+lstat (man 2 lstat)
+malloc (man 3 malloc)
+open (man 2 open)
+opendir (man 3 opendir)
+perror (man 3 perror)
+read (man 2 read)
+readdir (man 3 readdir)
+signal (man 2 signal)
+stat (man 2 stat)
+strtok (man 3 strtok)
+wait (man 2 wait)
+waitpid (man 2 waitpid)
+wait3 (man 2 wait3)
+wait4 (man 2 wait4)
+write (man 2 write)
+_exit (man 2 _exit)
+```
+
+### INSTALLING
+Compile like this:
+```
+gcc -Wall -Wextra -Werror -pedantic *.c -o hsh
+```
+
+## USAGE
+Currently, when run, it looks like this:
+```
+simple_shell git:(main) ./hsh
+#cisfun$ pwd
+/home/vagrant/simple_shell
+#cisfun$ cat _strlen.c
+#include "simpleshell.h"
+
+/**
+ * _strlen - size of string
+ * @s: string to find size
+ * Return: string size
+ */
+
+int _strlen(char *s)
+{
+        int i = 0;
+
+        while (s[i] != '\0')
+        {
+                ++i;
+        }
+        return (i);
+}
+#cisfun$ exit
+➜  simple_shell git:(main)
+```
                                                                                 
 * This shell is a command-line interpreter that provides a command line user interface for Unix-like operating systems.
                                                                                 
@@ -145,3 +215,7 @@ This is the man file for the shell
 ### HEADER FILE
 #### simpleshell.h
 Contains all the function prototypes and header files used in this project.
+
+## Authors
+* **Romi Varnier**
+* **Côme Le Sauter**
