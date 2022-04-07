@@ -3,7 +3,7 @@
 Code a simple shell for [Holberton School](https://www.holbertonschool.com/).
 
 ### PREREQUISITES
-Only use the following functions and system calls:
+Only use the following functions and system calls :
 ```
 access (man 2 access)
 chdir (man 2 chdir)
@@ -36,13 +36,13 @@ _exit (man 2 _exit)
 ```
 
 ### INSTALLING
-Compile like this:
+Compile like this :
 ```
 gcc -Wall -Wextra -Werror -pedantic *.c -o hsh
 ```
 
 ## USAGE
-Currently, when run, it looks like this:
+Currently, when run, it looks like this :
 ```
 simple_shell git:(main) ./hsh
 #cisfun$ pwd
