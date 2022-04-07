@@ -6,7 +6,7 @@
                                                                                 
 Users type commands which get executed within the session.                      
                                                                                 
-###### EXAMPLE:                                                                 
+###### EXAMPLE :                                                                 
 ~~~~                                                                            
 $pwd - to print working directory                                               
 $cd .. - to change direcory to previous directory                               
@@ -30,34 +30,34 @@ Below are the files in this repository and a description of the code they contai
 > 
 > It prints a new line and clears the standard output instead of interrupting the running shell  
 > 
-> Prototype: `void ctrl_c(int signal);`
+> Prototype : `void ctrl_c(int signal);`
 
 #### `func_read.c`
 > Contains the function that gets the user input from standard input  
 > 
-> Prototype: `char *func_read(void);`  
+> Prototype : `char *func_read(void);`  
 > 
-> Returns:
+> Returns :
 > * The pointer to the string of input the user gave if successfull  
 > * NULL if it fails        
 
 #### `func_split.c`
 > Contains the function that tokenises the user input and stores the resulting tokens in an array  
 > 
-> Prototype: `char **func_split(char *line);`  
+> Prototype : `char **func_split(char *line);`  
 > 
-> Returns:
+> Returns :
 > * The array of tokens if succesful
 > * NULL on failure
 
 #### `func_exec.c`
 > Contains the function and it's where the actual linux commands are executed.
 > 
-> Prototype: `int func_exec(char **args);`
+> Prototype : `int func_exec(char **args);`
 > 
 > It also uses a few other functions.
 > 
-> Return:
+> Return :
 > * `1` on success
 > * `0` on failure
 
@@ -66,25 +66,25 @@ Below are the files in this repository and a description of the code they contai
 > 
 > Prototype: `char *get_path(char *getcmd);`
 > 
-> Returns:
+> Returns :
 > * A pointer to the full path of the command on success
 > * `NULL` on failure
 
 #### `get_env.c`
 > Contains the function that finds the environment variable requested by user
 > 
-> Prototype: `char *get_env(char *getcmd);`
+> Prototype : `char *get_env(char *getcmd);`
 > 
-> Returns: 
+> Returns : 
 > * The value of the environment variable on success
 > * `NULL` on failure
 
 #### `split_env.c`
 > Contains the function that tokenizes the `PATH` to return a list of folders  
 > 
-> Prototype: `char **split_env(char *path);`
+> Prototype : `char **split_env(char *path);`
 > 
-> Returns:
+> Returns :
 > * An array of directories on success
 > * `NULL` on failure
 
@@ -94,7 +94,7 @@ Some custom commands for the shell
 ##### `_printenv.c`
 > Contains the function that pints all the environment variables  
 > 
-> Prototype: `void _printenv(void);`
+> Prototype : `void _printenv(void);`
 > 
 > It is called by typing the command `env` in the shell  
 
@@ -106,17 +106,17 @@ Some custom commands for the shell
 #### `_strcat.c`
 > Contains the function that concatonates two strings passed to it  
 > 
-> Prototype: `char *_strcat(char *dest, char *src);`  
+> Prototype : `char *_strcat(char *dest, char *src);`  
 > 
-> Returns:
+> Returns :
 > * A pointer to the new string
 
 #### `_strcmp.c`
 > Contains the function that compares two strings  
 > 
-> Prototype: `int _strcmp(char *s1, char *s2);`  
+> Prototype : `int _strcmp(char *s1, char *s2);`  
 > 
-> Returns: 
+> Returns : 
 > * 0 if equal
 > * negative value if less than
 > * positive if greater than
@@ -124,15 +124,15 @@ Some custom commands for the shell
 #### `_strlen.c`
 > Contains the function that finds the length of string  
 > 
-> Prototype: `int _strlen(char *s);`
+> Prototype : `int _strlen(char *s);`
 > 
-> Returns:
+> Returns :
 > * Length of the string passed on success
 
 #### `_strncmp.c`
 > Contains the function that compares n bytes in str1 and str2
 > 
-> Prototype: `int _strncmp(char *str1, char *str2, int n);`  
+> Prototype : `int _strncmp(char *str1, char *str2, int n);`  
 > 
 > Returns :
 > * positif if str2 is less than str1
@@ -142,7 +142,7 @@ Some custom commands for the shell
 ### MAN FILE
 #### man_1_simple_shell
 This is the man file for the shell
-> Usage: man ./man_1_simple_shell
+> Usage : man ./man_1_simple_shell
 
 ### HEADER FILE
 #### simpleshell.h
