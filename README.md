@@ -15,7 +15,7 @@ $cat - to read a file's content
                                                                                 
 ~~~~  
 
-### Contents
+## Contents
 Below are the files in this repository and a description of the code they contain
 
 #### main.c
