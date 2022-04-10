@@ -34,7 +34,6 @@ wait4 (man 2 wait4)
 write (man 2 write)
 _exit (man 2 _exit)
 ```
-
 ### INSTALLING
 Compile like this :
 ```
@@ -82,6 +81,8 @@ $pwd - to print working directory
 $echo - to print to standard output                                             
 $cat - to read a file's content                                                                                
 ~~~~  
+### FLOW CHART
+![Untitled Diagram drawio](https://user-images.githubusercontent.com/69083631/162617970-1765403f-24e7-45ee-85f7-f28d72e0304f.png)
 
 ### CONTENTS
 Below are the files in this repository and a description of the code they contain
