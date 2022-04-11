@@ -83,8 +83,9 @@ $cat - to read a file's content
 ~~~~  
 ### FLOW CHART
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/97439220/162708091-2bc5b756-10da-4a3b-9ce0-6ffe8a294c8d.jpg" align="center" width="100" alt="flowchart">
+  <img src="https://user-images.githubusercontent.com/97439220/162708091-2bc5b756-10da-4a3b-9ce0-6ffe8a294c8d.jpg" align="center" width="600" alt="flowchart">
 </p>
+
 ### CONTENTS
 Below are the files in this repository and a description of the code they contain
 
