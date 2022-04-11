@@ -82,7 +82,7 @@ $echo - to print to standard output
 $cat - to read a file's content                                                                                
 ~~~~  
 ### FLOW CHART
-[Simpleshell.pdf](https://github.com/comels/simple_shell/files/8462762/Simpleshell.pdf)
+![Simpleshell](https://user-images.githubusercontent.com/97439220/162708091-2bc5b756-10da-4a3b-9ce0-6ffe8a294c8d.jpg)
 
 ### CONTENTS
 Below are the files in this repository and a description of the code they contain
