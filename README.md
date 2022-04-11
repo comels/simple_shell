@@ -82,7 +82,7 @@ $echo - to print to standard output
 $cat - to read a file's content                                                                                
 ~~~~  
 ### FLOW CHART
-![Untitled Diagram drawio](https://user-images.githubusercontent.com/69083631/162617970-1765403f-24e7-45ee-85f7-f28d72e0304f.png)
+[Simpleshell.pdf](https://github.com/comels/simple_shell/files/8462762/Simpleshell.pdf)
 
 ### CONTENTS
 Below are the files in this repository and a description of the code they contain
