@@ -1,0 +1,47 @@
+.TH "SIMPLESHELL" 1 "APRIL 2022" "SIMPLESHELL(1)" "Simpleshell Commands Manual "
+
+.SH NAME
+hsh - simpleshell
+
+.SH SYNOPSIS
+#include "simpleshell.h"
+
+.B ./hsh
+
+.SH DESCRIPTION
+The Simple Shell is a command that reads lines from the terminal, interpreter and executes them in a standard output.
+.SH RETURN VALUE
+The simpleshell return 0 if successful.
+
+.SH SYNTAX
+
+.B INTERACTIVE MODE :
+
+#cisfun$ <command> <argument 1> <argument 2> ...
+
+EXAMPLE 1 : #cisfun$ /bin/ls
+
+EXAMPLE 2 : #cisfun$ ls -l
+
+EXAMPLE 3 : #cisfun$ cat _strlen.c
+
+.B NON-INTERACTIVE MODE :
+
+simpleshell$ <command> | ./hsh
+
+EXAMPLE 1 : simpleshell$ echo "ls -l" | ./hsh
+
+.SH BUILTIN COMMANDS
+
+env - List the current environment variables
+
+exit - Exit the shell
+
+.SH SEE ALSO
+README.md - https://github.com/comels/simple_shell
+
+.SH BUGS
+No known bugs
+
+.SH AUTHORS
+Hiromi Varnier / Côme Le Sauter

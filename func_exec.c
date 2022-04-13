@@ -17,27 +17,25 @@ int func_exec(char **args)
 	{
 		perror("Error : fork");
 	}
-
 	if (my_pid == 0)
 	{
-		if (getcmd[0] == '/' || getcmd[0] == '.')
-		{
-			getcmd = args[0];
-		}
-		else
-		{
-			getcmd = get_path(args[0]);
-		}
-
 		if (args[0] == NULL)
 		{
 			perror("Error : no argument");
 		}
-
+		if (getcmd[0] != '/' || getcmd[0] != '.')
+		{
+			getcmd = get_path(args[0]);
+		}
+		if (getcmd == NULL)
+		{
+			free(getcmd);
+			perror("Error : command");
+			return (0);
+		}
 		if (execve(getcmd, args, NULL) == -1)
 		{
 			perror("Error : execve");
-			return (0);
 		}
 	}
 	else
