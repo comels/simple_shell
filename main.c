@@ -27,17 +27,20 @@ int main(void)
 		}
 		if (_strcmp(line, "env") == 0)
 		{
-			_printenv(), free(line);
+			_printenv();
+			free(line);
 			continue;
 		}
 		args = func_split(line);
 		if (args == NULL)
 		{
-			free(line), free(args);
+			free(line);
+			free(args);
 			continue;
 		}
 		status = func_exec(args);
-		free(line), free(args);
+		free(line);
+		free(args);
 	}
 	return (0);
 }
