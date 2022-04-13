@@ -32,12 +32,12 @@ int func_exec(char **args)
 		if (args[0] == NULL)
 		{
 			perror("Error : no argument");
-			return (0);
 		}
 
 		if (execve(getcmd, args, environ) == -1)
 		{
 			perror("Error : execve");
+			return (0);
 		}
 	}
 	else
