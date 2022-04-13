@@ -35,7 +35,7 @@ int func_exec(char **args)
 			return (0);
 		}
 
-		if (execve(getcmd, args, NULL) == -1)
+		if (execve(getcmd, args, environ) == -1)
 		{
 			perror("Error : execve");
 		}
