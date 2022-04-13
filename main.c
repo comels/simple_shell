@@ -25,7 +25,7 @@ int main(void)
 		if (_strcmp(line, "exit") == 0)
 		{
 			free(line);
-			exit(0);
+			return (0);
 		}
 		if (_strcmp(line, "env") == 0)
 		{
@@ -41,5 +41,5 @@ int main(void)
 		status = func_exec(args);
 		free(line), free(args);
 	}
-	exit(0);
+	return (0);
 }
