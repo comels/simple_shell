@@ -1,7 +1,7 @@
 #include "simpleshell.h"
 
 /**
- * _exit - function that exit the shell
+ * func_exit - function that exit the shell
  * Return: 0
  */
 
