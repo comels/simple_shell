@@ -20,7 +20,7 @@ int main(void)
 
 		line = func_read();
 		if (line == NULL)
-			exit(0);
+			return (0);
 
 		if (_strcmp(line, "exit") == 0)
 		{
