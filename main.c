@@ -32,11 +32,6 @@ int main(void)
 			_printenv(), free(line);
 			continue;
 		}
-		if (_strcmp(line, " ") == 0)
-		{
-			free(line);
-			continue;
-		}
 		args = func_split(line);
 		if (args == NULL)
 		{
