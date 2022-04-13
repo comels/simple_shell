@@ -22,17 +22,14 @@ char *get_path(char *getcmd)
 
 	for (i = 0; tab_path[i] != NULL; i++)
 	{
-		newpath[0] = '\0';
+		newpath[0] = 0;
 		_strcat(newpath, tab_path[i]);
 		_strcat(newpath, "/");
 		_strcat(newpath, getcmd);
 		if (stat(newpath, &st) == 0)
-		{
-			free(tab_path);
 			return (newpath);
-		}
 	}
-	free(tab_path);
 	free(newpath);
 	return (NULL);
 }
+

@@ -2,7 +2,7 @@
 
 /**
   * main - start the shell
-  * Return: 0
+  * Return: 1
   */
 
 int main(void)
@@ -21,15 +21,14 @@ int main(void)
 
 		line = func_read();
 		if (line == NULL)
-		{
 			return (0);
-		}
-		else if (_strcmp(line, "exit") == 0)
+
+		if (_strcmp(line, "exit") == 0)
 		{
 			free(line);
 			return (0);
 		}
-		else if (_strcmp(line, "env") == 0)
+		if (_strcmp(line, "env") == 0)
 		{
 			_printenv();
 			free(line);
@@ -38,12 +37,13 @@ int main(void)
 		args = func_split(line);
 		if (args == NULL)
 		{
-			free(args), free(line);
+			free(line);
+			free(args);
 			continue;
 		}
-		if (line[0] != '\n' || line[1] != '\0')
-			status = func_exec(args);
-		free(line), free(args);
+		status = func_exec(args);
+		free(line);
+		free(args);
 	}
 	return (0);
 }

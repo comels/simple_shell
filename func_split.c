@@ -16,7 +16,7 @@ char **func_split(char *line)
 	if (tab_token == NULL)
 	{
 		perror("Error : malloc");
-		return (0);
+		exit(1);
 	}
 
 	token = strtok(line, " ");

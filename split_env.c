@@ -18,6 +18,7 @@ char **split_env(char *path)
 		perror("Error : malloc");
 		exit(1);
 	}
+
 	token = strtok(path, ":");
 	while (token != NULL)
 	{
