@@ -17,6 +17,7 @@ int func_exec(char **args)
 	{
 		perror("Error : fork");
 	}
+
 	if (my_pid == 0)
 	{
 		if (getcmd[0] == '/' || getcmd[0] == '.')
@@ -27,10 +28,12 @@ int func_exec(char **args)
 		{
 			getcmd = get_path(args[0]);
 		}
+
 		if (args[0] == NULL)
 		{
 			perror("Error : no argument");
 		}
+
 		if (execve(getcmd, args, environ) == -1)
 		{
 			perror("Error : execve");

@@ -15,6 +15,7 @@ int main(void)
 	while (status)
 	{
 		status = isatty(0);
+
 		if (status == 1)
 			write(1, "#cisfun$ ", 9);
 
