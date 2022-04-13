@@ -20,7 +20,7 @@ int main(void)
 
 		line = func_read();
 		if (line == NULL)
-			return (0);
+			exit(0);
 
 		if (_strcmp(line, "exit") == 0)
 		{
@@ -41,5 +41,5 @@ int main(void)
 		status = func_exec(args);
 		free(line), free(args);
 	}
-	return (0);
+	exit(0);
 }
