@@ -14,7 +14,6 @@ char *func_read(void)
 	len = getline(&line, &size, stdin);
 	if (len == -1)
 	{
-		write(1, "\n", 1);
 		free(line);
 		return (NULL);
 	}
